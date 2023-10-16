@@ -33,3 +33,5 @@ To merge **multiple files**, use the bash script `script.sh` provided. It merges
 The image shows the VVVX tiles in Galactic coordinates (notice that the tiles are overlaped). In particular, tiles from 457 to 512 cover the north Galactic region of the bulge. The script provided in this repository merges all the tiles in a single file,  as shown in the image below.
 
 ![image](vvvx_tiles.png)
+
+Note: it tooks around 1 hour to merge all the tiles into a single table. Also very RAM consuming, so it is recommended to run it in a server with at least 64 GB of RAM for the example provided here (output file 7.8 GB).
