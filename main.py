@@ -11,7 +11,7 @@ Example:
     python main.py \
     -f1 /run/media/jorge/BLUE/DATA/phd/vvvx/jhk0512.fits \
     -f2 /run/media/jorge/BLUE/DATA/phd/vvvx/jhk0511.fits \
-    -o restuls.fits
+    -o results.fits
 """
 
 
@@ -31,8 +31,9 @@ def main(f1, f2, o):
     table1 = Table.read(file1)
     table2 = Table.read(file2)
 
+    print(f"Processing tables {file1} and {file2}...")
     merged_table = merge_tables(table1, table2)
-    merged_table.write(output_file, format="fits")
+    merged_table.write(output_file, format="fits", overwrite=True)
 
 
 if __name__ == "__main__":
