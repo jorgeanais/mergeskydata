@@ -30,7 +30,7 @@ To merge **multiple files**, use the bash script `script.sh` provided. It merges
 
 # Example
 
-The image shows the VVVX tiles in Galactic coordinates (notice that the tiles are overlaped). In particular, tiles from 457 to 512 cover the north Galactic region of the bulge. The script provided in this repository merges all the tiles in a single file,  as shown in the image below.
+The image shows the VVVX tiles in Galactic coordinates (notice that the tiles overlap). In particular, tiles from 457 to 512 cover the north Galactic region of the bulge. The script in this repository merges all the tiles of this region into a single file, as shown in the image below.
 
 ![image](vvvx_tiles.png)
 
