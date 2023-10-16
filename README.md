@@ -34,4 +34,4 @@ The image shows the VVVX tiles in Galactic coordinates (notice that the tiles ar
 
 ![image](vvvx_tiles.png)
 
-Note: it tooks around 1 hour to merge all the tiles into a single table. Also very RAM consuming, so it is recommended to run it in a server with at least 64 GB of RAM for the example provided here (output file 7.8 GB).
+Note: it took around 1 hour to merge all the tiles into a single table. It is also very RAM-consuming, so it is recommended to run it on a server with at least 64 GB of RAM for the example provided here (output file 7.8 GB).
