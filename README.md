@@ -1,6 +1,6 @@
 # mergeskydata
 
-This program is used to merge the sky data from the sky data files into a single file. In particular, it takes as input the VVV/VVVX tiles and merges them into a single file. The output file is a fits file with contains the original photometrical data for non-overlaped sources, and for overlaped sources it computes a weighted average for available photometrical bands.
+This program merges the sky data from multiple files into a single file. In particular, it can take the VVV/VVVX tiles as input and combine them into a single table. The output is a fits table containing the photometrical data for non-overlapped sources, and for overlapped sources it computes a weighted average for available photometrical bands.
 
 ## How to install
 
