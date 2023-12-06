@@ -97,8 +97,6 @@ def match_tables(
 
     """
 
-    table1 = table1.copy()
-    table2 = table2.copy()
 
     # Check if the tables have the same columns
     if set(table1.colnames) != set(table2.colnames):
@@ -186,8 +184,6 @@ def avg_magnitudes(
         Table with the combined magnitudes.
     """
 
-    table = table.copy()
-
     for band_name, error_name in zip(band_names, error_names):
         w_mag, w_error = compute_weighted_magnitude_and_error(
             table,
@@ -226,8 +222,6 @@ def merge_tables(
     table1: Table,
     table2: Table,
 ) -> Table:
-    table1 = table1.copy()
-    table2 = table2.copy()
 
     # Get column names
     magnitude_colnames = [col for col in table1.colnames if "mag" in col]
