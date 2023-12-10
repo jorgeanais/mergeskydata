@@ -222,13 +222,18 @@ def merge_tables(
     table1: Table,
     table2: Table,
 ) -> Table:
-
+    
     # Get column names
     magnitude_colnames = [col for col in table1.colnames if "mag" in col]
     error_colnames = [col for col in table1.colnames if "er" in col]
 
     # Match and combine tables
     unmatched_sources_t, matched_sources_t = match_tables(table1, table2)
+
+    # If there are no matched sources, return the unmatched sources only
+    if len(matched_sources_t) == 0:
+        print("There are no matched sources")
+        return unmatched_sources_t
 
     matched_sources_t = avg_magnitudes(
         table=matched_sources_t,
